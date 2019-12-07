@@ -1,0 +1,12 @@
+FROM richarvey/nginx-php-fpm:1.8.2
+
+ENV MYSQL_USER
+ENV MYSQL_PASSWORD
+ENV MYSQL_DATABASE
+
+WORKDIR /var/www/html
+ADD . .
+
+EXPOSE 80 443
+
+
